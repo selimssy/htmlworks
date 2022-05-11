@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  div{
+    width: 600px;
+    height: 600px;
+    border: 1px solid #ccc;
+    /* background-image: url(../images/bg55.jpg); */
+    /* background-size: auto;(이게 기본값) */
+  }
+
+  .pic4{
+  background-image: url("../images/bg55.jpg") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* 이미지가 비율로 축소됨 (me:div 가로????(반대도 해보자) 너비에 맞춰 크기 조정) */
+
+  }
+
+  .pic5{
+    background-image: url("../images/bg55.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 이미지가 요소를 꽉 채우고 나머지는 잘림(me: 가로세로 중 큰 쪽으로 맞춰 크기 조정) */
+  }
+  </style>
+</head>
+<body>
+  <div class="pic4"></div>
+  <div class="pic5"></div>
+</body>
+</html>

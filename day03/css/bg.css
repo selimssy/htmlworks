@@ -1,0 +1,49 @@
+div{
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+  /* background-image: url(../images/bg55.jpg); */
+  /* background-size: auto;(이게 기본값) */
+  margin-bottom: 20px;
+}
+
+
+
+
+.pic1{
+  background-image: url("../images/bg55.jpg");
+  background-size: auto;
+  /* 원래 이미지 크기대로 */
+}
+
+
+.pic2{
+  background: url("../images/bg55.jpg") no-repeat ;
+  background-size: 400px;
+  /* 고정 크기로 */
+}
+
+
+.pic3{
+  background-image: url("../images/bg55.jpg") no-repeat;
+  background-size: 50%;
+  /* div 가로 너비의 50% */
+  background-position: right 100px bottom 50px;
+  /* 오른쪽에서 100px 띠고 bottom에서 50px 띠겠다!! */
+  /* 기본적으로 0이 생략되어 있는 것 */
+}
+
+
+
+.pic4{
+  background-image: url("../images/bg55.jpg") no-repeat;
+  background-size: contain;
+  /* 이미지가 비율로 축소됨 (me:div 가로????(반대도 해보자) 너비에 맞춰 크기 조정) */
+
+}
+
+.pic5{
+  background-image: url("../images/bg55.jpg") no-repeat;
+  background-size: cover;
+  /* 이미지가 요소를 꽉 채우고 나머지는 잘림(me: 가로세로 중 큰 쪽으로 맞춰 크기 조정) */
+}

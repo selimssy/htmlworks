@@ -1,0 +1,10 @@
+/* 외부스타일 */
+/* 실제로는 외부를 많이 쓴다 */
+body{background-color: rgb(154,205,5,0.50);}
+/* rgb3개 뒤에는 투명도 */
+h2{color: rgb(255,0,0);}
+p{
+  color: #0000ff;
+  font-size: 18px;
+  font-family: "바탕체"
+}

@@ -1,0 +1,36 @@
+nav a{
+  text-decoration: none;
+  color: #777;
+}
+
+
+
+/*질문답변 스타일*/
+
+table{
+  border: 3px solid #016810;
+  border-collapse: collapse ;
+  width: 500px;
+  height: 100px;
+ 
+
+}
+
+th, td{
+  border: 1px solid #016810;
+  text-align: center;
+}
+
+
+
+
+
+/*로그인스타일*/
+.tbl_login{
+  width: 300px;
+}
+
+.tbl_login td{
+  width: 150px;
+  height: 30px;
+}

@@ -1,0 +1,15 @@
+ul{
+  /* list-style-type: circle; */
+  /* list-style-type: none;      불릿제거(아무 것도 없는) */
+  list-style-image: url("../images/dot.png");
+  /* 하나 올라가야되면 ../ */
+}
+
+
+ol{
+  list-style-type: lower-alpha;
+  /* list-style-type: upper-alpha;
+  list-style-type: lower-roman;
+  list-style-type: upper-roman;
+  list-style-type: decimal */
+}

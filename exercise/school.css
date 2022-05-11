@@ -1,0 +1,31 @@
+table{
+  /* border: 1px solid #ccc;(붕괴됐으니까 하나 없어도된다) */
+  border-collapse: collapse;
+  width: 450px;
+  /* height: 80px; */
+  text-align: center;
+}
+
+th, td{
+  /* border: 1px solid #ccc; */
+  border: 1px dashed #ccc;
+  height: 30px;
+}
+thead, tfoot{background-color: #eee;}
+
+caption{margin: 10px;}
+
+/* caption-side: bottom;} */  /*캡션의 위치 설정*/   
+/* caption{margin-bottom: 10px;} */
+
+/* .bg{background-color: #eee;} */
+
+
+table td:nth-child(1){
+  font-weight: bold;
+}
+
+/* tfoot{
+  background-color: #eee;
+} */
+/*위에서 thead랑 같이 묶어줬으니까 필요없다*/
