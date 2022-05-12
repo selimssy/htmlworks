@@ -1,0 +1,37 @@
+
+body{background: #000;}
+
+#container{
+  width: 500px;
+  margin: 20px auto;
+  border: none;
+  padding:  30px;
+  background: #fff;
+}
+
+
+ul{list-style: none;}
+ul li{line-height: 3;}
+
+
+#main{
+  background: rgb(8, 100, 60);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+#main2{text-align: center;
+margin-bottom: 40px;}
+
+.text{
+  font-size: large;
+  font-weight: bold;
+  color: #ad3000;
+}
+
+#mic{text-align: right;}
+
+
+#out{width: 550px;
+background: #000;}
