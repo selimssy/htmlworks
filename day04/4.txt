@@ -1,0 +1,32 @@
+display
+
+블록(block)레벨 요소 - div, p, h
+인라인(inline) 레벨 요소 - img span
+
+display - inline, none, block
+display:flex 도 있다.
+
+
+
+
+
+cd c:/
+
+처음
+git clone
+
+두번째 이후
+git pull
+
+
+
+
+
+
+
+
+한줄:
+<input type = "text" >
+
+여러줄
+<textarea></textarea>

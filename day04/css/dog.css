@@ -1,0 +1,57 @@
+/* 전체 여백 초기화 */
+*{margin:0; padding: 0;}
+
+#container{
+    width: 1000px;
+    margin: 30px auto;
+    /* nav 정렬하려면 얘를 div에 담아서 정렬해야(ul 등도 그런지 확인해보자) */
+    border: 1px solid #777;
+}
+nav{
+    width: 100%;
+    /* (div의 1000px 그대로 사용하겠다!) */
+    height: 80px;
+    background: #006699;
+}
+
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    /* margin이나 padding 등 속성 주려면 inline-block을 써야한다 */
+    /* 근데 inline이랑 line-height로도 가능하다 */
+    margin: 20px;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;     
+    color: #000;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: #ff0;
+}
+
+
+section{
+    width: 997px;
+    height: 800px;
+}
+
+section h1{
+    margin: 20px;
+}
+
+
+footer{
+    width: 997px;
+    height: 100px;
+    border: 1px solid #777;
+}

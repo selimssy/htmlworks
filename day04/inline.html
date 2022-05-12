@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>인라인 레벨 요소</title>
+        <style>
+
+            #container{
+                width: 500px;
+                display: flex;
+                /* flex-direction: row; */
+                /* flex-direction: column;
+                align-items: baseline; */
+                flex: wrap;
+                /* 교차축으로 아래로 배치됨 */
+            }        
+            
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <div>  <!--이렇게저렇게 해보다가 안되서 중간과정에서 div하나더추가-->
+        <img src="./images/bear.jpg"> 
+        <img src="./images/cat.jpg">    
+        <img src="./images/photo.jpg">
+        </div>        
+    </div>
+    </body>
+</html>

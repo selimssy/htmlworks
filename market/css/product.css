@@ -1,6 +1,26 @@
+#container{
+  width: 800px;
+  margin: 20px auto;
+  
+  padding:  10px 20px;
+  border-radius: 5px;
+}
+
+
+
+/* 메뉴스타일 */
 nav a{
   text-decoration: none;
   color: #777;
+}
+
+
+/* 레드향 소개 스타일 */
+div{
+  width: 700px;
+  border: 1px solid #333;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
 
