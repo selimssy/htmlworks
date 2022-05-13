@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 폼</title>
+  <style>
+    ul{list-style: none;}
+    ul li{margin: 20px 0;}
+    h2{padding-left: 20px;}
+    label{width: 80px; float: left;}
+    /* t: label에 크기를 주면 배치가 가능하다 */
+    /* me:input상자 정렬하기 위해 ★lable에 크기를 주고!!★ float한다!! */
+    input{width: 150px; height: 25px;}
+    input[type="submit"]{width: 80px; height: 30px;}
+    /* 이렇게 따로 지정하려면 대괄호[]안에 속성선택자(type 등)를 넣어줘야!! */
+
+  </style>
+</head>
+<body>
+  <h2>로그인</h2>
+  <!-- method는 필수!! action은 생략가능 -->
+  <form action="loginProcess.jsp" method="post">
+    <!-- 정보공개하면 안될 때(주소표시줄에 안보인다)는 post 공개해도 되면 get -->
+    <ul>
+      <li>
+        <label>아이디</label> 
+        <input type="text" name="id" required>
+        <!-- size="10" : 영어로 10자, 한글로 5자 -->
+        <!-- required: 안적고 로그인 누르면 안넘어간다 -->
+      </li>
+  
+
+
+    <li>
+      <label>비밀번호</label> 
+      <input type="password" name="password" required>   <!--type="password"입력하면 *로 나온다-->
+     </li>
+
+
+    <li>
+      <input type="submit" value="로그인">
+    </li>
+    </ul>
+  </form>
+
+</body>
+</html>

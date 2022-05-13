@@ -1,0 +1,55 @@
+*{margin: 0 auto; padding: 0;}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+header{
+    /* width 안쓰면 1000px 그대로 받아온다 */
+    height: 80px;
+    background: #006699;
+}
+
+
+header #logo{
+    width: 200px;
+    float: left;
+}
+
+header h1{
+    color: rgb(144,240,35);
+    padding: 10px 20px;
+}
+
+
+header nav{
+    width: 700px;
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 100px;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 10px;
+    /* inline-block 안쓸꺼면 이렇게 line-height을 header height로 하면 된다! */
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(144,240,35);
+}
+
+
+section h1{padding: 20px;}
