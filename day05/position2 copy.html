@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position - relative와 absolute</title>
+  <style>
+    .box1{
+      width: 500px;
+      height: 500px;
+      border: 2px solid #ccc;   
+      margin: 0 auto;
+      /* 부모요소가 기준이다!!!*/
+      position: relative;
+    }
+
+    .box2{
+      width: 100px;
+      height: 100px;
+      background: orange; 
+      position: absolute;
+      /* 그럼 이제 부모요소 기준으로 아래 설정대로 배치된다!! */
+      /* 즉, 양수면 부모요소 안에서만 움직이고 부모요소 밖으로 보내려면 -부호 붙여야!! */
+       /* top: 0px; */
+      bottom: 50px;
+      /* left: 30px; */
+      right: 100px;  
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+  
+</body>
+</html>

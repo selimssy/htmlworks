@@ -1,0 +1,56 @@
+/* *{margin: 0 auto; padding: 0; box-sizing: border-box;} */
+
+/* 교안이랑 비교해서 다시 봐보자아아아 */
+
+#container{
+  width: 600px;
+  border: 1px solid #eee;
+  margin: 10 auto;
+  padding: 10px;
+}
+
+
+fieldset{
+  padding: 10px;
+  margin: 20px 5px ;
+  }
+
+fieldset ul{list-style: none;}
+
+fieldset ul li{
+  line-height: 3;
+  margin-left: 50px;
+}
+
+ul li label{
+  width: 150px;
+  float: left;
+}
+
+ul li input{
+  width: 250px;
+  height: 30px;
+}
+
+
+select{
+  width: 120px;
+  height: 30px;
+}
+
+#button{text-align: center;}
+
+#button input{
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  margin: 10px;
+  
+}
+
+#button input:hover{
+  background: rgb(33, 122, 33);
+  color: #fff;
+  border-color: #fff;
+ 
+}

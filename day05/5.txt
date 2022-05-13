@@ -5,7 +5,7 @@
 2.float : left, right(왼쪽, 오른쪽으로 배치하는 경우) 
   이거 해제하고 싶으면 clearboth 
 
-3. position-absolute(완전 독립) - relative, fixed
+3. position(완전 독립):absolute / relative / fixed
 
 
 
@@ -24,3 +24,10 @@ nanum(나눔체)
 
 1.html <link>태그로 연결
 2.css에 적용 @import(제일 위에 넣어야!!!!!!!)
+
+
+
+
+
+type=button   :  자바스크립트 연동
+onclick 속성
