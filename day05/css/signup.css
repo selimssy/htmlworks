@@ -3,7 +3,7 @@
 /* 교안이랑 비교해서 다시 봐보자아아아 */
 
 #container{
-  width: 600px;
+  width: 700px;
   border: 1px solid #eee;
   margin: 10 auto;
   padding: 10px;
@@ -25,18 +25,22 @@ fieldset ul li{
 ul li label{
   width: 150px;
   float: left;
+  /* text-align: right;
+  margin-block-end: 10pz; */
 }
 
 ul li input{
-  width: 250px;
+  width: 200px;
   height: 30px;
 }
 
 
-select{
+select, #umail{
   width: 120px;
   height: 30px;
 }
+
+
 
 #button{text-align: center;}
 

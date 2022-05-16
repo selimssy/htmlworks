@@ -1,39 +1,638 @@
 ----------------------float.html----------------------
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>float 속성</title>
+        <style>
+            /* div{               
+                width: 100px;
+                padding: 10px;   
+                margin: 10px;            
+                color: #fff; */
+                /* display: inline-block;
+                margin이나 padding 들어가면 꼭 inline-block으로!! */
+                /* float: left; */
+            /* } */
+
+            .box1{
+                
+                width: 100px;
+                padding: 10px;   
+                margin: 10px;            
+                color: #fff;             
+                float: left;
+                background: #00f;
+            }
+            .box2{
+                width: 100px;
+                padding: 10px;   
+                margin: 10px;            
+                color: #fff;  
+                float: left;           
+                /* float: right; */
+                background: #0f0;
+            }
+            .box3{
+                width: 100px;
+                padding: 10px;   
+                margin: 10px;            
+                color: #fff;               
+                /* float: left; */
+                float: right;
+                background: #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">박스1</div>
+        <div class="box2">박스1</div>
+        <div class="box3">박스1</div>
+    </body>
+</html>
+
 
 --------------------float2.html--------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>float 속성</title>
+        <style>
+            div{               
+                width: 100px;
+                padding: 10px;   
+                margin: 10px;      
+                color: #fff;                                 
+                /* float: left;  */
+            } 
+
+            .box1{                          
+                background: #00f;
+                float: left;
+            }
+
+            .box2{          
+                background: #0f0;                    
+                float: left;             
+            }
+
+            .box3{          
+                float: right;                   
+                background: #f00;
+            }
+
+            .box4{
+                background: #f0f;
+                clear:both
+                /* float 속성 해제!! : clear: left, right, both */
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box1">박스1</div>
+        <div class="box2">박스1</div>
+        <div class="box3">박스1</div>
+        <div class="box4">박스1</div>
+    </body>
+</html>
 
 
 --------------------float_text.html--------------------
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성</title>
+    <style>
+        #content{
+            width: 900px; margin: 0 auto;
+        }
+        img{
+            float:left;
+            /* 텍스트의 경우에는 이미지가 left로 배치되면서 밑에 텍스트도 올라온다!! */
+            margin-right: 10px;
+        }
+        p{width: 800px;
+        line-height: 2;}
+    </style>
+</head>
+<body>
+    <div id="content">
+    <img src="./images/cat.jpg" alt="고양이">
+    <h2>왼쪽이나 오른쪽으로 배치하는 float 속성</h2>
+    <p>웹 문서를 만들다보면 문단과 이미지를 나라히 표시해야 할 경우가 있다 
+        p태그는 블록 레벨 요소이므로 이미지와 나란히 배치할 수 없다
+        이럴때는 float 속성을 사용하여 이미지를 표시한다.
+    </p>
+    </div>
+</body>
+</html>
 --------------------layout2h.html--------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div id="container">
+        <header>    <!--시이트제목 역할은 div랑 똑같은데 div가 너무 많아서 구분하는것-->
+            <h1>사이트 제목</h1>
 
+        </header>
+
+        <section> <!--본문-->
+            <h1>본문</h1>
+
+        </section>
+        <aside>
+            <h1>사이드바</h1>
+        </aside>
+        <footer>
+            <h1>바닥글</h1>
+        </footer>
+    </div>
+</body>
+</html>
 
 --------------------layout.css---------------------
+*{margin: 0; padding: 0;}
+/* margin, padding 초기화 */
 
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* 얘가 사이트의 전체 크기 등 */
+
+header{
+    width: 978px;
+    height: 100px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+/* 폭 합을 container 기준으로 맞춰야한다!! 총 1000d이어야 하니까 border 2, padding 총 20, 여기는 978이어야! */
+
+
+section{
+    width: 620px;
+    /* 사이드바도 있으니까!! */
+    height: 600px;
+    border: 1px solid #333;
+    float: left;
+}
+
+aside{
+    width: 320px;
+    height: 600px;
+    border: 1px solid #333;
+    float: right;
+    background: rgb(222,222,249);
+}
+
+footer{
+    width: 998px;
+    height: 100px;
+    border: 1px solid #333;
+    clear: left ;
+}
 
 -----------------------nav_pet.html---------------------
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성 적용</title>
+    <link rel="stylesheet" href="./css/pet_form.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div id="container">
+    <!-- 상단 머리글 영역 -->
+        <header>        <!--nav가 header 안에 있다-->
+            <div id="logo">
+                <h1>petDog</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">애완견 종류</a></li>
+                    <li><a href="#">입양하기</a></li>
+                    <li><a href="#">건강돌보기</a></li>
+                    <li><a href="#">더불어살기</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <!-- 본문영역 -->
+        <section>
+            <h1>애완견 종류</h1>
+        </section>
+
+
+        <!-- 바닥글 영역 -->
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
 -----------------------pet.css--------------------------
+*{margin: 0 auto; padding: 0;}
 
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+header{
+    /* width 안쓰면 1000px 그대로 받아온다 */
+    height: 80px;
+    background: #006699;
+}
+
+
+header #logo{
+    width: 200px;
+    float: left;
+}
+
+header h1{
+    color: rgb(144,240,35);
+    padding: 10px 20px;
+}
+
+
+header nav{
+    width: 700px;
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 100px;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 10px;
+    /* inline-block 안쓸꺼면 이렇게 line-height을 header height로 하면 된다! */
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(144,240,35);
+}
+
+
+section h1{padding: 20px;}
 --------------------pet_foam.css-----------------------
+/* 구글웹폰트 가져올 때 : 맨 위에 위치시켜야!! */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
+
+*{margin: 0 auto; padding: 0;}
+#container{width: 1000px; margin: 0 auto;}
+header{ height: 80px; background: #006699;}
+header #logo{width: 200px; float: left;}
+header h1{color: rgb(144,240,35); font-size: 40px ; padding: 10px 20px;
+    font-family: 'Nanum Pen Script', cursive;}
+header nav{width: 700px; float: right;}
+nav ul{list-style: none; text-align: right; margin-right: 100px;}
+nav ul li{display: inline; line-height: 80px;margin: 10px;}
+nav ul li a{color: #fff; text-decoration: none;}
+nav ul li a:hover{color: rgb(144,240,35);}
+
+section h1{padding: 20px;}
 -----------------------login.html------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 폼</title>
+  <style>
+    ul{list-style: none;}
+    ul li{margin: 20px 0;}
+    h2{padding-left: 20px;}
+    label{width: 80px; float: left;}
+    /* t: label에 크기를 주면 배치가 가능하다 */
+    /* me:input상자 정렬하기 위해 ★lable에 크기를 주고!!★ float한다!! */
+    input{width: 150px; height: 25px;}
+    input[type="submit"]{width: 80px; height: 30px;}
+    /* 이렇게 따로 지정하려면 대괄호[]안에 속성선택자(type 등)를 넣어줘야!! */
 
+  </style>
+</head>
+<body>
+  <h2>로그인</h2>
+  <!-- method는 필수!! action은 생략가능 -->
+  <form action="loginProcess.jsp" method="post">
+    <!-- 정보공개하면 안될 때(주소표시줄에 안보인다)는 post 공개해도 되면 get -->
+    <ul>
+      <li>
+        <label>아이디</label> 
+        <input type="text" name="id" required>
+        <!-- size="10" : 영어로 10자, 한글로 5자 -->
+        <!-- required: 안적고 로그인 누르면 안넘어간다 -->
+      </li>
+  
+
+
+    <li>
+      <label>비밀번호</label> 
+      <input type="password" name="password" required>   <!--type="password"입력하면 *로 나온다-->
+     </li>
+
+
+    <li>
+      <input type="submit" value="로그인">
+    </li>
+    </ul>
+  </form>
+
+</body>
+</html>
 -----------------------select.html-----------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>select 태그</title>
+  <link rel="stylesheet" href="./css/subject.css">
+</head>
+<body>
+  <div id="content">
+  <form action="" method="post">
+    <fieldset>
+      <legend>수강 신청</legend>
+      <ul>
+        <li>
+          <label for="cid" class="reg">학과번호</label>
+          <input type="text" name="dnum" id="cid" required autofocus>
+         <!-- css링 자바스크립트에서 쓰려면 select에 cid label에 for 써야 -->
+        </li>
+        <li>
+          <label for="name" class="reg">이름</label>
+          <input type="text" name="Name" id="name" required>
+        </li>
+        <li>
+          <label for="major" class="reg">학과</label>
+          <select name="major" id="major" required>
+          <!--css랑 자바스크립트에서 쓰려면 select에 cid label에 for 써야 -->
+            <option value="mechanic">기계공학과</option>
+            <option value="biotech" selected>생명공학과</option>
+            <option value="electric">전기전자공학과</option>
+            <option value="software">소프트웨어학과</option>
+          </select>
+        </li>
+        <!-- selected: 기본으로 선택되어 있는거 -->
+        <li>
+          <label for="profile">이력서 첨부</label>
+          <input type="file" name="Profile" id="profile">
+        </li>
+      </ul>
+      <p>
+        <!-- <input type="submit" value="신청"> -->
+        <button type="submit">신청</button>
+      </p>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
 
 -----------------------order.html-----------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 주문서</title>
+  <style>
+    ul{list-style: none;}
+  </style>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="" method="get">
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p>주문할 상품을 선택해 주세요</p>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="g_3">  선물용 3kg</label>
+          <input type="number" min="0" max="5" value="1">개 (최대 5개)
+          <!-- value="1" 하니까 기본적으로 1개라고 되네... -->
+        </li>
 
+        <li>
+          <label><input type="checkbox" value="g_5">  선물용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 5개)
+          
+        </li>
+      </ul>
+
+
+
+
+      <ul>
+        <li>
+          <label><input type="checkbox" value="g_3">  선물용 3kg</label>
+          <input type="range" min="0" max="5" value="1">개 (최대 5개)
+          <!-- value="1" 하니까 기본적으로 1개라고 되네... -->
+        </li>
+
+        <li>
+          <label><input type="checkbox" value="g_5">  선물용 5kg</label>
+          <input type="range" min="0" max="3" value="1">개 (최대 5개)        
+        </li>
+
+      </ul>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="d-day">배송 지정</label>
+          <input type="date" name="d-day" id="d-day">      
+        </li>
+
+        <li>
+          <label for="d-time">배송 시간</label>
+          <input type="time" name="d-time" id="d-time">      
+        </li>
+      </ul>
+    </fieldset>
+   
+  </form>
+</body>
+</html>
 -----------------------button.html-----------------------
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button 태그</title>
+</head>
+<body>
+  <p>
+    <button type="button" onclick="alert('안녕하세요')">확인</button>
+  </p>
+  <!-- alert('안녕하세요')" : 알림창이 뜬다 -->
+  <!-- 쌍따 안에 쌍따음표 쓰면 안된다 -->
+  
+  <div>
+  <button type="button" 
+          onclick="confirm('정말로 삭제하시겠습니까?')">삭제</button>
+  <!-- confirm(): 확인시켜주는 창 뜬다 -->
+  <!-- <br>로 다음줄 옮겨도 되는데 p나 div를 더 많이쓴다 -->
+</div>
+<div>
+  <!-- <a href="http://www.naver.com"> target="_blank"네이버로 가기</a> -->
+  <button type="button" 
+          onclick="window.open('http://www.naver.com')">사이트로 이동</button>
+</div>
+</body>
+</html>
 -----------------------box-sizing.html-----------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxizing 속성</title>
+  <style>
 
+    div{ 
+      width: 300px;
+      height: 150px; 
+      border: 2px solid #f00;   
+      margin: 10px;
+      padding: 10px;
+      display: inline-block;
+    }
+    .box1{
+      box-sizing: content-box;
+      /* content 값만 width와 height에 적용 */
+    }
+    .box2{
+      box-sizing: border-box;
+      /* width와  height 값이 테두리와 패딩을 합한 값이 된다! */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
 -----------------------layout2h_boxsizing/html-----------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <link rel="stylesheet" href="./css/layout2.css">
+</head>
+<body>
+    <div id="container">
+        <header>    <!--시이트제목 역할은 div랑 똑같은데 div가 너무 많아서 구분하는것-->
+            <h1>사이트 제목</h1>
 
+        </header>
+
+        <section> <!--본문-->
+            <h1>본문</h1>
+
+        </section>
+        <aside>
+            <h1>사이드바</h1>
+        </aside>
+        <footer>
+            <h1>바닥글</h1>
+        </footer>
+    </div>
+</body>
+</html>
 -----------------------layout2.css-----------------------
+*{margin: 0; padding: 0;
+box-sizing: border-box;}
+/* margin, padding 초기화 */
+/* ★box-sizing: border-box; */
 
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* 얘가 사이트의 전체 크기 등 */
+
+header{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+/* 폭 합을 container 기준으로 맞춰야한다!! 총 1000d이어야 하니까 border 2, padding 총 20, 여기는 978이어야! */
+
+
+section{
+    width: 620px;
+    /* 사이드바도 있으니까!! */
+    height: 600px;
+    border: 1px solid #333;
+    float: left;
+}
+
+aside{
+    width: 320px;
+    height: 600px;
+    border: 1px solid #333;
+    float: right;
+    background: rgb(222,222,249);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #333;
+    padding: 10px;
+    clear: left ;
+}
 -----------------------새폴더 notice-----------------------
 
 -----------------------notice.html-----------------------
