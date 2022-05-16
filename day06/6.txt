@@ -1,0 +1,59 @@
+  이미지 전체가 아니라 일부분만 누르면 링크 연결
+<map name="맵이름">
+	<area shape="rect>
+	<area shape = "circle>
+</map>
+<img usemap=""#맵이름>
+
+
+
+
+
+배치(position)
+float : left | right
+clear : left | right | both
+
+position : absolute | relative | fixed 
+
+
+
+
+
+<Overflow>
+박스의 내용이 더 길 때 어떻게 보일지를 결정
+overflow: visible | hidden | auto 
+
+
+opacity: 투명도 조절
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML4 와 HTML5>
+
+HTML4
+<div id=header></div>
+<div id=section></div>
+<div id=footer></div>
+
+
+HTML5
+<header></header>
+<section></section>
+<footer></footer>
+
+
+
+
+
+
+<iframe>내/외부 html 파일</iframe>
+: 페이지 안에 내부/외부 파일을 삽입

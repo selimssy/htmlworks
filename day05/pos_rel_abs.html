@@ -19,20 +19,29 @@
       background: #00f;
       position: absolute;
     }
-    #coord1{top: 0; left: 0;}
-    #coord2{top: 0; right: 0;}
-    #coord3{top: 100px; right: 100px;}
-    #coord4{bottom: 180px; right: 0;}
-    #coord5{bottom: 150px; right: 200px;}
+    .coord1{top: 0; left: 0;}
+    .coord2{top: 0; right: 0;}
+    .coord3{top: 250px; right: 250px;}
+    .coord4{bottom: 0px; right: 0;}
+    .coord5{bottom: 120px; right: 125px;}
   </style>
 </head>
 <body>
   <div id="wrap">
-    <div class="box" id="coord1"></div>
+    <div class="box coord1"></div>
+    <div class="box coord2"></div>
+    <div class="box coord3"></div>
+    <div class="box coord4"></div>
+    <div class="box coord5"></div>
+
+    <!-- 아래꺼보다 이렇게 더 많이쓴다(box 뒤 coord1 등이 id 역할)
+    ★주의할 점은 이렇게 하면 css에서 box도 .으로 해야되고 coord도 .으로 해야된다!!★ -->
+
+    <!-- <div class="box" id="coord1"></div>
     <div class="box" id="coord2"></div>
     <div class="box" id="coord3"></div>
     <div class="box" id="coord4"></div>
-    <div class="box" id="coord5"></div>
+    <div class="box" id="coord5"></div> -->
   </div>
 </body>
 </html>
