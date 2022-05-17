@@ -1,0 +1,11 @@
+.container{width: 960px; margin: 0 auto;}
+nav{height: 80px;}
+nav ul{list-style: none; border-bottom: 2px solid #ccc; 
+        padding: 10px 0; text-align: center;}
+nav ul li{display: inline-block; margin: 10px 20px;}
+nav a:link, a:visited{text-decoration: none; color: #000;}
+/* nav a와 같은 코드긴 하다(근데 이게 정석) */
+nav a:hover, a:focus{background: #000; color: #fff; padding: 10px; border-radius: 5px;}
+/* focus : 특정 요소에 초점 맞춰져 있을 때(탭 키 누르면 넘어간다) */
+nav a:active{background: #f00;}
+/* active: 클릭 했을 때 */

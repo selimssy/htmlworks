@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* 예전에 많이 썼는데 이것도 그냥 생략해도 된다 */
+
+.btxt{color: red;}
+.ctxt{color: blue;}
+.atxt{font-weight:bold}
+/* 파란글씨도 오게 하면서 볼드체도 하고싶을 때 */
