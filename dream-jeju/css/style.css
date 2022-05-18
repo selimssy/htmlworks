@@ -86,3 +86,64 @@ padding: 10px 20px;}
 #tbl_board, th, td{border: 1px solid #ccc; border-collapse: collapse;}
 /* .col{background: #eee;} */
 #tbl_board thead{background: #eee;}
+
+
+
+
+
+
+/* ABOUT ME 스타일 */
+
+
+#profile p{line-height: 2;}
+#profile {
+  width: 800px;
+  border: 1px solid#eee;
+  padding: 40px;
+  }
+#career{
+  background: rgba(225, 240, 11, 0.2);
+  border-radius: 10px;
+  
+}
+
+#intro img{
+  /* height: 100px;
+  float: left;
+  margin: 30px; */
+  margin: 30px;
+}
+
+#me{text-shadow: 1px 1px 1px rgb(16, 16, 129);}
+
+#site{
+  list-style: none;
+  font-size: small;
+}
+
+
+#site a{
+  text-decoration: none;
+  color: #333;
+}
+
+#profile h1, h2{
+  margin: 20px 0;
+  /* text-align: center; */
+}
+
+
+#career ul{
+  list-style: none;
+}
+
+
+#skill{margin-top: 20px;}
+
+#skill ul{
+  list-style: none;
+}
+
+#skill a{
+  text-decoration: none;
+}

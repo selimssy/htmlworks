@@ -1,0 +1,15 @@
+  #contents{
+  width: 450px;
+  height: 300px;
+  background: url("./bg.jpg");
+  background-size: cover;
+  position: relative;} 
+
+
+h1{
+  color: #fff;
+  font-size: 4em;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}

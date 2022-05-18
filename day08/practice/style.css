@@ -1,0 +1,31 @@
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 0 auto;}
+#container > h1{text-align: center;}
+.productlist{list-style: none; margin-top: 30px;}
+.productlist li{
+  display: inline-block; 
+  margin: 5px 10px;
+  overflow: hidden;
+}
+
+
+.productlist .caption{
+  width: 300px; 
+  height: 200px;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* 폭 넓이 없으면 올라가지 못한다 */
+
+.productlist li:hover .caption{
+  transform: translateY(-200px);
+  transition: 1s;
+}
+
+/* 이거 뜻 자세히 공부하자! */
+
+.productlist li h1, p{color: #fff;}
+
+
+
+
+/* 난 hidden 했다가 나타나게 해보고싶다 */

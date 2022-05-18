@@ -1,0 +1,35 @@
+*{margin: 0; padding: 0;}
+
+#contents{
+  width: 450px;
+  height: 300px;
+  margin: 0 auto;
+  background: url("./bg.jpg");
+  background-size: cover;
+  position: relative;} 
+
+
+h1{
+  color: #fff;
+  font-size: 4em;
+  position: absolute;
+  text-shadow: 2px 2px 2px #000;
+  top: 50%;
+  left: 55%;
+}
+
+.ho_im{visibility: hidden;}
+
+/* .ho_im img{
+이미지크기 조정
+} */
+
+#contents:hover .ho_im{
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+
+/* 이게 아닌가ㅠ  */

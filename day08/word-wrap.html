@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word wrap 속성</title>
+  <style>
+    ul{
+      width: 200px;
+      border: 1px solid #000;
+    }
+
+    ul:nth-child(2){
+     
+      word-wrap: break-word;
+    }
+
+    ul:nth-child(3){
+      word-break: keep-all;
+      word-wrap: break-word;
+    }
+    /* word-wrap: break-word : 박스 튀어나오지 않게 적당히 잘라 다음줄로 보낸다 */
+    /* word-break: keep-all   :  줄바꿈 할 때 단어 단위로 보낸다 */
+    /* word-break와 word-wrap를 같이 쓰는게 이상적이다 */
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <p>이름 : 홍길동 
+    </li>
+    <li>
+      <p>이메일 : hongildong20180101koreapublishing@hanmail.net</p>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <p>이름 : 홍길동 홍길동홍길동 홍길동 홍길동홍길동길동길동
+    </li>
+    <li>
+      <p>이메일 : hongildong20180101koreapublishing@hanmail.net</p>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <p>이름 : 홍길동 홍길동홍길동 홍길동 홍길동홍길동길동길동
+    </li>
+    <li>
+      <p>이메일 : hongildong20180101koreapublishing@hanmail.net</p>
+    </li>
+  </ul>
+
+ 
+</body>
+</html>

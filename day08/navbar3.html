@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 속성</title>
+  <style>
+    li{list-style: none;}
+    .gnb li{display: inline;}
+    .gnb li a{
+      display: inline-block;
+      background: brown;
+      color: #fff;
+      width: 100px;
+      height: 35px;
+      line-height: 35px;
+      /* height: 랑 line-height 같게하면 가운데로 오는데 더 미세하게 맞추고싶으면  미세한 조정해야; */
+      /* padding: 8px 5px 0 5px; */
+      /* line-height 대신 padding으로 해도 된다 */
+      text-align: center;
+    }
+
+    .gnb li a:hover{
+      text-decoration: underline;
+      background: #369;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="gnb">  <!-- global nav bar 약자 -->
+      <li><a href="#">Company</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

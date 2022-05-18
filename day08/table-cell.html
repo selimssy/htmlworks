@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table-cell 속성</title>
+  <style>
+    p{
+      width: 500px;
+      padding: 10px;
+      background: antiquewhite;
+    }
+
+    .valign1{
+      height: 50px;
+      line-height: 50px;
+    }
+    /* 1줄일 때는 height랑 line-height랑 같게 하면 가운데정렬 되는데 2줄 이상이면 적용 안된다! */
+
+
+    .valign2{
+      height: 100px;
+      vertical-align: middle;
+    }
+    /* 적용 안된다(table-cell 속성을 적용해줘야!!) */
+
+    .valign3{
+      height: 100px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+
+    /* <정리>
+    1줄 : height랑 line-height랑 같게
+    2줄 이상 : display: table-cell; vertical-align: middle */
+
+  </style>
+</head>
+<body>
+  <p class="valign1">잉여 인간이 행복한 나라</p>
+  <p class="valign2">정부는 아이를 많이 나으라고 하지만 그 아이들을 다 살릴 수도 없는게 지금의
+    현실이다. 돈을 주는 것 외에 행복한 삶을 살도록 해주는 것이 선진국으로 가는
+    길일 것이다.</p>
+  <p class="valign3"> 정보는 아이를 많이 나으라고 하지만 그 아이들을 다 살릴 수도 없는게 지금의
+    현실이다. 돈을 주는 것 외에 행복한 삶을 살도록 해주는 것이 선진국으로 가는
+    길일 것이다.</p>
+</body>
+</html>

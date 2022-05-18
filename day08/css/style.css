@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 30px auto;}
+#container > h1{text-align: center;}
+.productlist{list-style: none; margin-top: 30px;}
+.productlist li{
+  display: inline-block; 
+  margin: 5px 10px;
+  position: relative;
+  /* position이 적용이 되어야 overflow가 적용된다 */
+  overflow: hidden;
+}
+
+
+.productlist img{float: left;}
+/* 초과마진(밑에 회색 조금 남아있는거) 없애는 코드 */
+
+.productlist .caption{
+  width: 300px; 
+  height: 200px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 200px;
+  overflow: hidden;
+
+  /* visibility: hidden; */
+}
+/* 폭 넓이 없으면 올라가지 못한다 */
+
+.productlist li:hover .caption{
+  transform: translateY(-200px);
+  transition: 1s;
+  /* visibility: visible; */
+}
+
+/* 이거 뜻 자세히 공부하자! */
+
+.productlist li h1, p{color: #fff; text-align: center; line-height: 2;}
+
+
+
+
+/* 난 hidden 했다가 나타나게 해보고싶다
+부모 position relative
+자식 position absolurte
+     top : 0 left :0 해서 마우스대면 바로 나타나게도 해보자 */

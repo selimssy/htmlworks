@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: orange;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      transition-property: width, height, transform;
+      /* transition-duration: 2s, 2s, 2s; */
+      /* 지속시간 설정 transition: all 2s; 이렇게 해도 된다 */
+      /* transition: all 2s; */
+      transition: all 2s ease-in;
+      /* ease-in : 시작을 느리게 한다 */
+      /* ease-out : 느리게 끝난다 */
+      /* ease-in-out : 느리게 시작하고 느리게 끝난다 */
+    }
+
+    .box:hover{
+      width: 200px;
+      height: 150px;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
