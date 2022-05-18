@@ -1,0 +1,25 @@
+letter-spacing : 자간(글자간격)
+word-spacing : 단어간격
+
+initial 안되지ㅠ
+
+
+text-decoration - underline overline line-through none 확인
+
+indent: 들여쓰기
+
+
+
+word break 와 word wrap
+word-break와 word-wrap를 같이 쓰는게 이상적이래
+
+
+
+파일질라 업로드 후 원래꺼 남아있을 때
+컨트롤 + f5
+
+
+
+
+
+transform
