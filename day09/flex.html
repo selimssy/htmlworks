@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    #wrap{
+      display: flex;
+      flex-direction:column;
+    }
+    /* flex하려면 우선 부모가 있어야 되고 부모에서 이렇게 설정해줘야된다! */
+    /* flex-direction:column;   : 세로로 정렬하고 싶을 때 */
+    
+    
+    .box{
+      width: 100px;
+      height: 100px;
+      background: #00f;
+      margin: 20px;
+      /* display: inline-block; */
+      /* 이게 기존에 사용하던 방법 */
+
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

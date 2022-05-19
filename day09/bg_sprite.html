@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 sprite</title>
+  <style>
+    li{
+      list-style: none; 
+      margin: 15px;
+      /* display: inline; */
+    }
+
+    .lnb li a{
+      /* display: inline-block; */
+      /* li에 inline 하고 a에 inline-block해야 수평으로 간다 */
+      display: block;
+      text-decoration: none;
+      color: #000;
+      font: 25px Times;
+      padding-left: 30px;
+      background: url(./images/bg_sprite.png) no-repeat;
+      background-size: 26px 176px;
+      /* 원래 크기의 절반으로 줄여서 가로 크기를 맞춰준다(세로크기는 밑에서 추가로 작업할 것) */
+    }
+
+    .lnb li:nth-child(1) a{background-position: 0 0;}
+    .lnb li:nth-child(2) a{background-position: 0 -50px;}
+    .lnb li:nth-child(3) a{background-position: 0 -100px;}
+    .lnb li:nth-child(4) a{background-position: 0 -150px;}
+    /* 사진 크기를 절반으로 줄였으니까 50만 이동시킨다 */
+
+  </style>
+</head>
+<body>
+  <ul class="lnb">
+    <li><a href="#">Theater</a></li>
+    <li><a href="#">Secret Garden</a></li>
+    <li><a href="#">Content Hall</a></li>
+    <li><a href="#">Animal Farm</a></li>
+  </ul>
+</body>
+</html>

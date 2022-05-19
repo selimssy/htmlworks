@@ -1,0 +1,40 @@
+/* 모바일 기준 */
+body{background: rgb(18, 18, 88);}
+#container{width: 320px; margin: 0 auto;}
+.card{width: 300px; height: 500px; 
+  background: #fff;
+  position: relative;
+  margin: 20px 10px;
+}
+.word{
+  position: absolute;
+  top: 280px;
+  left: 15px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+#pic3{position: absolute; top: 20px; left: 20px;}
+/* 3번째 그림 사이즈 안맞아서 위치 맞춰주는 작업 */
+
+
+/* 태블릿 기준 */
+@media screen and (min-width: 768px) {
+  #container{width: 570px; margin: 0 auto;}
+  .card{width: 550px; height: 250px;
+  position: relative;}
+  .word{position: absolute;
+  top: 50px; left: 310px;}
+}
+
+/* 기준(여기서는 모바일)과 다른점만 적어주면 된다
+태블릿 .card에서 적지 않은 배경색이랑 마지은 자연스럽게 넘어온다 */
+
+
+
+
+/* pc 기준 */
+@media screen and (min-width: 1500px) {
+  #container{width: 1710px; margin: 0 auto;}
+  .card{float: left;}
+}
