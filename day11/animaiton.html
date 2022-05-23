@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션 속성</title>
+  <style>
+
+    @keyframes sample1{
+      0%{background: firebrick; 
+        -webkit-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        /* 실무에선 이런거 전부다 해줘야!(현재는 일부만 했다) */
+        transform: translate(0,0);}
+      50%{background:  cornflowerblue; 
+        -webkit-transform: translate(100px, 20px);
+        -ms-transform: translate(100px, 20px);
+        transform: translate(100px, 20px);}
+      100%{background: forestgreen; transform: translate(0,0);}
+    }
+
+    p{
+    width: 100px; height: 100px;
+    padding: 10px; background: firebrick;
+    animation-name: sample1;
+    animation-duration: 4s;
+    /* animation-iteration-count: 5; */
+    animation-fill-mode: forwards;      /* 마지막 상태 유지 */
+    /* animation: sample1 4s forwards;   */
+    /* 이렇게 한 줄에 쓸 수도 있다! */
+  }
+  </style>
+</head>
+<body>
+  <p>
+    Animation..
+  </p>
+</body>
+</html>

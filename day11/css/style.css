@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0;}
+body{background: url(../images/bg_grid.png)}
+p{
+  width: 600px; height: 100px; padding: 30px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 0, 0.5);
+  border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+.sizing{box-sizing: border-box;}
+.sizing_list{width: 500px; margin-top: 20px; list-style: none;}
+.sizing_list li{
+  float: left;
+  /* display: inline-block; 이랑 비교!!(이건 끊어진다) */
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 100, 0.3);
+  box-sizing: border-box;
+}
+
+.sizing_list li:nth-child(even){
+  /* .sizing_list li:nth-child(2n)이라고 해도 똑같다 */
+  background: rgba(0, 0, 100, 0.15);
+}
+
+.sizing_list li a{text-decoration: none;}
+
+.sizing_list li a:hover{text-decoration: underline;}
+.sizing_list li:hover{background: #ddd;}

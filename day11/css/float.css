@@ -1,0 +1,22 @@
+li, p, ul{margin: 0; padding: 0;}
+.gallery{
+  list-style: none;
+}
+.gallery li{
+  width: 150px;
+  /* 너비를 지정해줘야!(p태그였기 때문에 줄줄이 이어져있는 형태라 그냥 두면 float이 안먹힌다) */
+  float: left;
+  text-align: justify;
+  margin: 10px;
+}
+
+.gallery li h3{text-align: center; padding: 5px;background: #daa;}
+.gallery li + li h3{background: #abc;}
+.gallery li + li + li h3{background: #eba;}
+.gallery li + li + li + li h3{background: #aa7;}
+
+/* :nth-child()로하면 안되네ㅠ */
+
+
+
+
