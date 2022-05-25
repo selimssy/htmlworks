@@ -11,7 +11,7 @@ a:hover{text-decoration: underline;}
 
 
 /* 전체 메뉴 */
-#wrap{background: #cfc;}
+/* #wrap{background: #cfc;} */
 header{background: crimson; height: 60px;}
 header h1{float: left; margin-right: 40px;}
 header .gnb{float: left; padding-top: 10px;}
@@ -20,6 +20,7 @@ header .gnb li a{display: block; width: 50px; text-align: center; font-size: 16p
 
 #container{
     width: 800px;
+    background: #cfc;
     min-height: calc(100vh - 100px); 
     margin: 0 auto;}
 /* 1vh = 스크린 해상도의 1% */
@@ -28,7 +29,10 @@ header .gnb li a{display: block; width: 50px; text-align: center; font-size: 16p
 
 /* 사이드 메뉴 */
 .lnb{float: left; width: 20%; background: lightgreen;}
-.lnb li a{display: block; padding: 5px 20px;}
+.lnb li a{
+    display: block; 
+    padding: 5px 20px;
+}
 
 .content_area{float: right; width: 80%;}
 footer{background: lightgray; padding: 10px; height: 40px;}
