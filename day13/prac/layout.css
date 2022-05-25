@@ -1,0 +1,25 @@
+body, header, div, footer, h1, p, ul, li{
+    margin: 0; padding: 0;
+}
+li{list-style: none;}
+body{font: 14px 'Malgun Gothic', '맑은 고딕';}
+a{text-decoration: none; color: #444;}
+a:hover{text-decoration: underline;}
+
+#wrap{background: #cfc;}
+header{background: crimson; height: 70px;}
+/* header h1{float: left;}
+header .gnb{float: left;}
+header .gnb li{float: left;}
+
+
+.lnb{float: left;} */
+/* header h1{float: left;} */
+header #logo{float: left;}
+
+
+header .pre li{
+    float: left;  
+}
+header .gnb{text-align: center;}
+/* .gnb li{display: inline-block;} */
