@@ -1,0 +1,35 @@
+/* 모바일 기준 */
+h1, h2, ul, li, p, div{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+.clear::after{content: ""; display: block; clear: both;}
+/* 이거 의미와 효과 자세히ㅠㅠ */
+
+a{line-height: 1.5; color: #333;}   /* 모든 태그에 적용해야 하니까 li a 하면 안된다! */
+body{background: #f1f1f1; font-size: 13px;}
+header{background: coral;}
+h1{font-size: 25px; padding: 10px; color: #fff;}
+#container{min-height: calc(100vh - 60px);}
+.lnb li{
+    margin: 10px; padding: 10px; background: lightgreen;
+}
+.content{padding: 20px;}
+h2{font-size: 20px;}
+.ext{margin: 10px; padding: 20px; background: lightgreen;}
+footer{padding: 10px; background: #aaa;}
+
+
+/* @media screen and (min-width : 760px){ */  
+    /* 이렇게 하면 안된다!! 1024px까지만 태블릿이라는거를 컴퓨터에게 알려줘야!  */
+@media screen and (min-width : 760px) and (max-width: 1024px){
+    .lnb{float: left; width: 25%;}
+    .content{float: left; width: 75%;}
+    .aside{clear: both;}
+}
+
+
+@media screen and (min-width: 1025px){
+    .wrap{max-width: 1280px; margin: 0 auto;}
+    .lnb{float: left; width: 20%;}
+    .content{float: left; width: 50%;}
+    .aside{float: right; width: 30%;}
+}
